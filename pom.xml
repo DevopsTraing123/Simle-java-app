@@ -98,13 +98,13 @@
 	    <repository>
 	      <id>nexus</id>
 	      <name>facebook</name>
-	      <url>http://54.255.174.111:8081/repository/flipkart-release/</url>
+	      <url>http://54.173.134.213:8081/repository/facebookRepo/</url>
 	    </repository>
 	    
 	    <snapshotRepository>
 	      <id>nexus</id>
-	      <name>facebook_artifcatory</name>
-	      <url>http://3.92.61.81:8081/repository/facebook_repo/</url>
+	      <name>facebook</name>
+	      <url>http://54.173.134.213:8081/repository/facebook-snapshot/</url>
 	    </snapshotRepository>
 	    
 	</distributionManagement>
