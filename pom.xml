@@ -103,7 +103,7 @@
 	    
 	    <snapshotRepository>
 	      <id>nexus</id>
-	      <name>facebook</name>
+	      <name>amazon</name>
 	      <url>http://44.204.22.225:8081/repository/amzon/</url>
 	    </snapshotRepository>
 	    
