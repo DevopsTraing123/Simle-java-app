@@ -8,7 +8,7 @@
 </head>
 <body>
 <h1 align="center">DevOps training </h1>
-<h1 align="center">learning jenkins</h1>
+<h1 align="center">learning build triggers </h1>
 <hr>
 <br>
 	<h1><h3> Server Side IP Address </h3><br>
