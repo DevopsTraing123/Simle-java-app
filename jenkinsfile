@@ -1,0 +1,15 @@
+pipeline {
+    agent any
+    
+    tools {
+    maven 'maven3.8.6'
+    }
+
+    stages {
+        stage('cloning') {
+            steps {
+               git 'https://github.com/DevopsTraing123/simle-java-app.git' 
+            }
+        }
+            }
+}
