@@ -1,15 +1,32 @@
 pipeline {
     agent any
-    
-    tools {
-    maven 'maven3.8.6'
-    }
-
+    triggers {
+  cron '* * * * *'
+}
+tools {
+  maven 'maven3.8.6'
+}
+options {
+  buildDiscarder logRotator(artifactDaysToKeepStr: '', artifactNumToKeepStr: '5', daysToKeepStr: '', numToKeepStr: '5')
+}
     stages {
         stage('cloning') {
             steps {
-               git branch: 'dev', url: 'https://github.com/DevopsTraing123/simle-java-app.git' 
+                git 'https://github.com/narendra-rac/maven-web-application.git'
             }
         }
+	stage('build') {
+            steps {
+                sh 'mvn clean package'
             }
+        }
+  /*      	stage('deploy') {
+            steps {
+                sshagent(['tomcat22']) {
+                sh "scp -o StrictHostKeyChecking=no target/maven-web-application.war ec2-user@44.202.54.168:/opt/apache-tomcat-9.0.71/webapps/"
+            }
+
+            }
+        }*/
+    }
 }
