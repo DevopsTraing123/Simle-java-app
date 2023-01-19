@@ -95,11 +95,7 @@
 	
 	<distributionManagement>
 	
-	    <repository>
-	      <id>nexus</id>
-	      <name>facebook</name>
-	      <url>http://54.173.134.213:8081/repository/facebookRepo/</url>
-	    </repository>
+	    
 	    
 	    <snapshotRepository>
 	      <id>nexus</id>
